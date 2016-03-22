@@ -15,7 +15,7 @@ module Jekyll
     end
 
     def convert(content)
-      RbST.executables = {:html => "#{File.expand_path(File.dirname(__FILE__))}/rst2html.py"}
+      RbST.executables = {:html => "#{File.expand_path(File.dirname(__FILE__))}/jekyll-rst/rst2html.py"}
       RbST.new(content).to_html(:part => :fragment, :initial_header_level => 2)
     end
   end

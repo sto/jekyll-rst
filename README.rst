@@ -49,6 +49,18 @@ Installation
       $ cd <octopress-project-path>
       $ git submodule add https://github.com/xdissent/jekyll-rst.git plugins/jekyll-rst
 
+   As a ruby GEM:
+
+   ::
+
+      $ git clone https://github.com/stogh/jekyll-rst.git
+      $ cd jekyll-rst
+      $ rake install
+      $ rake clobber
+
+   To use the GEM with Jekyll you need to include the ``jekyll-rst`` on your
+   ``_config.yml`` file.
+
 4. Start blogging in ReStructuredText. Any file with the ``.rst`` extension
    will be parsed as ReST and rendered into HTML.
 

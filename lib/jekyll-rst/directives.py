@@ -13,8 +13,8 @@ import os
 import hashlib
 import __main__
 
-# Absolute path to pygments cache dir
-PYGMENTS_CACHE_DIR = os.path.abspath(os.path.join(os.path.dirname(__main__.__file__), '../../.pygments-cache'))
+# Absolute path to pygments cache dir (inside the current working directory)
+PYGMENTS_CACHE_DIR = os.path.abspath(os.path.join(os.getcwd(), '.pygments-cache'))
 
 # Ensure cache dir exists
 if not os.path.exists(PYGMENTS_CACHE_DIR):

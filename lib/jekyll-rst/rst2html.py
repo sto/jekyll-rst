@@ -33,7 +33,7 @@ description = ('Generates (X)HTML documents from standalone reStructuredText '
                + default_description)
 
 def main():
-    return transform(writer=Writer(), part='html_body')
+    return transform(writer=Writer(), part='html_body').encode('utf-8')
 
 if __name__ == '__main__':
     print(main())
